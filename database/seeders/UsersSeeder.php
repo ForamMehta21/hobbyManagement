@@ -20,9 +20,9 @@ class UsersSeeder extends Seeder
         $superAdmin = User::create([
             'first_name' => 'Super',
             'last_name' => 'Admin',
-            'email' => 'admin@example.com',
+            'email' => 'hobbymanagement@gmail.com',
             'password' => bcrypt('admin@123'), // Default password
-            'status' => 1,
+            'status' => 'active',
             'mobile' => '9999999999', // Optional
         ]);
 

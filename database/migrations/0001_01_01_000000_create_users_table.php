@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('password');
             $table->string('photo')->nullable();
             $table->string('mobile')->nullable();
-            $table->boolean('status')->default(true);
+            $table->enum('status', ['active', 'inactive']);
             $table->rememberToken();
             $table->timestamps();
         });
